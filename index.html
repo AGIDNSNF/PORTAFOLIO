@@ -1,0 +1,591 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gabriel | Portafolio Fullstack</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar">
+      <div class="container nav-container">
+        <a href="#" class="logo" onclick="showHome(event)">
+          <span class="logo-icon">&lt;/&gt;</span>
+          Gabriel<span class="dot">.</span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="#inicio" onclick="showHome(event)">Inicio</a></li>
+          <li><a href="#sobre-mi">Sobre mí</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#contacto" class="nav-cta">Contacto</a></li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ===== PESTAÑAS DE PROYECTOS ===== -->
+    <div class="tabs-container">
+      <div class="tabs-wrapper">
+        <button class="tab-btn active" onclick="showHome(event)">
+          <i class="fas fa-home"></i>
+          <span>Inicio</span>
+        </button>
+        <button class="tab-btn" onclick="showProject(event, 's03')">
+          <i class="fas fa-leaf"></i>
+          <span>Proyecto S03</span>
+        </button>
+        <button class="tab-btn" onclick="showProject(event, 's04')">
+          <i class="fas fa-dice"></i>
+          <span>Proyecto S04</span>
+        </button>
+        <button class="tab-btn" onclick="showProject(event, 's05')">
+          <i class="fab fa-react"></i>
+          <span>Proyecto S05</span>
+        </button>
+        <button class="tab-btn" onclick="showProject(event, 's06')">
+          <i class="fas fa-code"></i>
+          <span>Proyecto S06</span>
+        </button>
+        <button class="tab-btn" onclick="showProject(event, 's07')">
+          <i class="fas fa-rocket"></i>
+          <span>Proyecto S07</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- ===== CONTENEDOR PRINCIPAL ===== -->
+    <div id="main-content" class="main-content">
+
+    <!-- ===== CONTENIDO DE INICIO (HOME) ===== -->
+    <div id="home-content" class="home-content">
+    <!-- ===== HERO ===== -->
+    <section id="inicio" class="hero">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="pulse-dot"></span>
+            Disponible para proyectos
+          </div>
+          <h1 class="hero-title">
+            Hola, soy <br />
+            <span class="gradient-text">Gabriel</span>
+          </h1>
+          <p class="hero-subtitle">
+            <span class="typewriter">Estudiante de Ingeniería de Sistemas</span>
+          </p>
+          <p class="hero-description">
+            Apasionado por el desarrollo <strong>Fullstack</strong> y la creación
+            de soluciones tecnológicas que transforman ideas en realidad.
+          </p>
+          <div class="hero-buttons">
+            <a href="#proyectos" class="btn-primary">
+              <i class="fas fa-rocket"></i> Ver proyectos
+            </a>
+            <a href="#contacto" class="btn-secondary">
+              <i class="fas fa-paper-plane"></i> Contáctame
+            </a>
+          </div>
+          <div class="hero-social">
+            <a href="https://github.com/AGIDNSNF" target="_blank" aria-label="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/gabrielosr/" target="_blank" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="mailto:e_2022200426a@uncp.edu.pe" aria-label="Email">
+              <i class="fas fa-envelope"></i>
+            </a>
+            <a href="#" aria-label="Twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-avatar-wrapper">
+            <div class="hero-avatar-glow"></div>
+            <img
+              src="avatar.jpg"
+              alt="Gabriel - Estudiante de Ingeniería de Sistemas"
+              class="hero-avatar"
+            />
+            <div class="floating-card card-1">
+              <i class="fas fa-code"></i>
+              <span>Fullstack</span>
+            </div>
+            <div class="floating-card card-2">
+              <i class="fas fa-graduation-cap"></i>
+              <span>UNCP</span>
+            </div>
+            <div class="floating-card card-3">
+              <i class="fas fa-rocket"></i>
+              <span>Innovación</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-wave">
+        <svg viewBox="0 0 1440 120" fill="none">
+          <path
+            d="M0 60L60 55C120 50 240 40 360 45C480 50 600 70 720 75C840 80 960 70 1080 60C1200 50 1320 40 1380 35L1440 30V120H1380C1320 120 1200 120 1080 120H360C240 120 120 120 60 120H0V60Z"
+            fill="#0a0a0f"
+          />
+        </svg>
+      </div>
+    </section>
+
+    <!-- ===== SOBRE MÍ ===== -->
+    <section id="sobre-mi" class="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Sobre mí</span>
+          <h2>Conoce al <span class="gradient-text">desarrollador</span></h2>
+          <p class="section-subtitle">
+            Un vistazo a mi trayectoria, pasiones y lo que me motiva
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-image">
+            <div class="about-image-wrapper">
+              <img src="avatar.jpg" alt="Gabriel" />
+              <div class="about-experience">
+                <span class="exp-number">+2</span>
+                <span class="exp-label">Años de aprendizaje</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-content">
+            <h3>Estudiante de <span class="gradient-text">Ingeniería de Sistemas</span></h3>
+            <p>
+              Soy estudiante de Ingeniería de Sistemas en la Universidad Nacional
+              del Centro del Perú. Me apasiona el desarrollo web y la creación de
+              soluciones tecnológicas que resuelvan problemas reales de manera
+              eficiente y escalable.
+            </p>
+            <p>
+              El rol que más me atrae es el de <strong>Fullstack Developer</strong>,
+              ya que me permite dominar tanto el frontend como el backend,
+              entendiendo la arquitectura completa de una aplicación.
+            </p>
+            <div class="about-stats">
+              <div class="stat">
+                <span class="stat-number">10+</span>
+                <span class="stat-label">Proyectos</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number">5+</span>
+                <span class="stat-label">Tecnologías</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number">100%</span>
+                <span class="stat-label">Dedicación</span>
+              </div>
+            </div>
+            <a href="#" class="btn-primary">
+              <i class="fas fa-download"></i> Descargar CV
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== HABILIDADES ===== -->
+    <section id="habilidades" class="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Habilidades</span>
+          <h2>Mi <span class="gradient-text">arsenal</span> técnico</h2>
+          <p class="section-subtitle">
+            Tecnologías y herramientas que domino para construir soluciones
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fab fa-html5"></i></div>
+            <h4>HTML5</h4>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 90%"></div>
+            </div>
+            <span class="skill-percent">90%</span>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+            <h4>CSS3</h4>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 85%"></div>
+            </div>
+            <span class="skill-percent">85%</span>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fab fa-js"></i></div>
+            <h4>JavaScript</h4>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 75%"></div>
+            </div>
+            <span class="skill-percent">75%</span>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fab fa-python"></i></div>
+            <h4>Python</h4>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 70%"></div>
+            </div>
+            <span class="skill-percent">70%</span>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fab fa-java"></i></div>
+            <h4>Java</h4>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 65%"></div>
+            </div>
+            <span class="skill-percent">65%</span>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fas fa-database"></i></div>
+            <h4>SQL</h4>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 70%"></div>
+            </div>
+            <span class="skill-percent">70%</span>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fab fa-react"></i></div>
+            <h4>React</h4>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 55%"></div>
+            </div>
+            <span class="skill-percent">55%</span>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fab fa-node-js"></i></div>
+            <h4>Node.js</h4>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 50%"></div>
+            </div>
+            <span class="skill-percent">50%</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROYECTOS ===== -->
+    <section id="proyectos" class="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Proyectos</span>
+          <h2>Mis <span class="gradient-text">creaciones</span></h2>
+          <p class="section-subtitle">
+            Algunos de los proyectos que he desarrollado
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-image">
+              <div class="project-placeholder">
+                <i class="fas fa-shopping-cart"></i>
+              </div>
+              <div class="project-overlay">
+                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-tag">Fullstack</span>
+              <h3>E-commerce App</h3>
+              <p>Plataforma de ventas con carrito de compras, pasarela de pago y panel de administración.</p>
+              <div class="project-tech">
+                <span>React</span>
+                <span>Node.js</span>
+                <span>MongoDB</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <div class="project-placeholder">
+                <i class="fas fa-tasks"></i>
+              </div>
+              <div class="project-overlay">
+                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-tag">Frontend</span>
+              <h3>Task Manager</h3>
+              <p>Aplicación de gestión de tareas con drag & drop, filtros y modo oscuro.</p>
+              <div class="project-tech">
+                <span>React</span>
+                <span>CSS3</span>
+                <span>LocalStorage</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <div class="project-placeholder">
+                <i class="fas fa-robot"></i>
+              </div>
+              <div class="project-overlay">
+                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-tag">Backend</span>
+              <h3>Chatbot IA</h3>
+              <p>Asistente virtual con procesamiento de lenguaje natural y respuestas inteligentes.</p>
+              <div class="project-tech">
+                <span>Python</span>
+                <span>Flask</span>
+                <span>TensorFlow</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACTO ===== -->
+    <section id="contacto" class="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Contacto</span>
+          <h2>Hablemos <span class="gradient-text">ahora</span></h2>
+          <p class="section-subtitle">
+            ¿Tienes un proyecto en mente? ¡Me encantaría escucharlo!
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info">
+            <h3>Conectemos</h3>
+            <p>
+              Estoy siempre abierto a nuevas oportunidades, colaboraciones o
+              simplemente para charlar sobre tecnología.
+            </p>
+            <div class="contact-items">
+              <div class="contact-item">
+                <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                <div>
+                  <strong>Email</strong>
+                  <a href="mailto:e_2022200426a@uncp.edu.pe">e_2022200426a@uncp.edu.pe</a>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon"><i class="fab fa-github"></i></div>
+                <div>
+                  <strong>GitHub</strong>
+                  <a href="https://github.com/AGIDNSNF" target="_blank">@AGIDNSNF</a>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon"><i class="fab fa-linkedin-in"></i></div>
+                <div>
+                  <strong>LinkedIn</strong>
+                  <a href="https://www.linkedin.com/in/gabrielosr/" target="_blank">Gabriel OSR</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <form class="contact-form">
+            <div class="form-group">
+              <label for="name">Nombre</label>
+              <input type="text" id="name" placeholder="Tu nombre" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="tu@email.com" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Mensaje</label>
+              <textarea id="message" rows="4" placeholder="Cuéntame sobre tu proyecto..." required></textarea>
+            </div>
+            <button type="submit" class="btn-primary btn-full">
+              <i class="fas fa-paper-plane"></i> Enviar mensaje
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <span class="logo-icon">&lt;/&gt;</span>
+            Gabriel<span class="dot">.</span>
+          </a>
+          <p>Construyendo el futuro, una línea de código a la vez.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Navegación</h4>
+          <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobre-mi">Sobre mí</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+          </ul>
+        </div>
+        <div class="footer-social-links">
+          <h4>Redes</h4>
+          <div class="footer-social-icons">
+            <a href="https://github.com/AGIDNSNF" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/gabrielosr/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="mailto:e_2022200426a@uncp.edu.pe"><i class="fas fa-envelope"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <p>&copy; 2026 Gabriel | Ingeniería de Sistemas - UNCP</p>
+        </div>
+      </div>
+    </footer>
+    </div>
+    <!-- FIN CONTENIDO HOME -->
+
+    <!-- ===== IFRAMES DE PROYECTOS ===== -->
+    <iframe id="iframe-s03" class="project-iframe" src="PROYECTO%20-%20S03/index.html"></iframe>
+    <iframe id="iframe-s04" class="project-iframe" src="PROYECTO%20-%20S04/Ruleta.html"></iframe>
+    <iframe id="iframe-s05" class="project-iframe" src="PROYECTO%20-%20S05/React/mi-primera-app/build/index.html"></iframe>
+    <!-- Nota: S06 y S07 son proyectos Vite que requieren npm run build o npm run dev -->
+    <!-- Para usarlos, ejecuta 'npm run build' en cada proyecto y actualiza las rutas a dist/index.html -->
+    <iframe id="iframe-s06" class="project-iframe" src="PROYECTO%20-%20S06/dist/index.html"></iframe>
+    <iframe id="iframe-s07" class="project-iframe" src="PROYECTO%20-%20S07/dist/index.html"></iframe>
+    </div>
+
+    <script>
+      // ===== INICIALIZACIÓN =====
+      window.addEventListener('DOMContentLoaded', function() {
+        // Mostrar contenido home por defecto
+        document.getElementById('home-content').classList.add('active');
+      });
+
+      // ===== FUNCIONES DE NAVEGACIÓN DE PESTAÑAS =====
+      function showHome(e) {
+        if (e) e.preventDefault();
+        
+        // Ocultar todos los iframes
+        document.querySelectorAll('.project-iframe').forEach(iframe => {
+          iframe.classList.remove('active');
+        });
+        
+        // Mostrar contenido home
+        document.getElementById('home-content').classList.add('active');
+        
+        // Actualizar botón activo
+        document.querySelectorAll('.tab-btn').forEach(btn => {
+          btn.classList.remove('active');
+        });
+        document.querySelector('.tab-btn').classList.add('active');
+        
+        // Restaurar navbar con fondo transparente
+        document.querySelector('.navbar').classList.remove('always-visible');
+      }
+
+      function showProject(e, projectId) {
+        if (e) e.preventDefault();
+        
+        // Ocultar contenido home
+        document.getElementById('home-content').classList.remove('active');
+        
+        // Ocultar todos los iframes
+        document.querySelectorAll('.project-iframe').forEach(iframe => {
+          iframe.classList.remove('active');
+        });
+        
+        // Mostrar iframe del proyecto seleccionado
+        const targetIframe = document.getElementById(`iframe-${projectId}`);
+        if (targetIframe) {
+          targetIframe.classList.add('active');
+        }
+        
+        // Actualizar botón activo
+        document.querySelectorAll('.tab-btn').forEach(btn => {
+          btn.classList.remove('active');
+        });
+        if (e && e.currentTarget) {
+          e.currentTarget.classList.add('active');
+        }
+        
+        // Hacer navbar siempre visible
+        document.querySelector('.navbar').classList.add('always-visible');
+        
+        // Cerrar menú móvil si está abierto
+        document.querySelector('.nav-links').classList.remove('active');
+        document.querySelector('.hamburger').classList.remove('active');
+      }
+
+      // ===== HAMBURGER MENU =====
+      document.querySelector('.hamburger').addEventListener('click', function () {
+        document.querySelector('.nav-links').classList.toggle('active');
+        this.classList.toggle('active');
+      });
+
+      // ===== SCROLL NAVBAR =====
+      window.addEventListener('scroll', function () {
+        const navbar = document.querySelector('.navbar');
+        if (window.scrollY > 50) {
+          navbar.classList.add('scrolled');
+        } else {
+          navbar.classList.remove('scrolled');
+        }
+      });
+
+      // ===== SMOOTH SCROLL =====
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            document.querySelector('.nav-links').classList.remove('active');
+            document.querySelector('.hamburger').classList.remove('active');
+          }
+        });
+      });
+
+      // ===== SCROLL REVEAL (Intersección Observer) =====
+      const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('revealed');
+          }
+        });
+      }, observerOptions);
+
+      document.querySelectorAll('.skill-card, .project-card, .about-grid, .contact-grid').forEach(el => {
+        el.classList.add('hidden');
+        observer.observe(el);
+      });
+    </script>
+  </body>
+</html>
